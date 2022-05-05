@@ -1,4 +1,4 @@
-import fetchData from './effects/fetchData'
+import fetchAccountData from './effects/fetchData'
 
 const model = {
   state: {
@@ -14,7 +14,7 @@ const model = {
     },
   },
   effects: (dispatch) => ({
-    // fetchAccountList: (args, state) => fetchAccountData(args, state, dispatch),
+    fetchAccountList: (args, state) => fetchAccountData(args, state, dispatch),
   })
 };
 
